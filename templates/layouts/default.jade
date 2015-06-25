@@ -77,14 +77,14 @@ html
 
 		//- FOOTER
 		.container: #footer
-			.pull-left &copy; Mark Bayfield
+			.pull-left &copy; Mark Bayfield 
 			
 			if user
 				if user.canAccessKeystone
 					p.text-right: a(href='/keystone') Open Keystone | 
 						a(href='/keystone/signout') Sign Out
 			else
-					p: a(href='/keystone/signin') Sign In
+					p.text-right: a(href='/keystone/signin') Sign In
 			
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
 			//- p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
